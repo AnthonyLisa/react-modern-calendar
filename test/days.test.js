@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import React from 'react';
 import { render, fireEvent, getByText } from '@testing-library/react';
 
