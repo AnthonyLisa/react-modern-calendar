@@ -135,7 +135,7 @@
 
 .Calendar__monthArrowWrapper:disabled,
 .Calendar__monthArrowWrapper.-hidden {
-  opacity: 0;
+  opacity: 0.3;
   pointer-events: none;
 }
 
