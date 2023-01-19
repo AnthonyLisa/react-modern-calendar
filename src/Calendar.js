@@ -28,6 +28,8 @@ const Calendar = ({
   shouldHighlightWeekends,
   renderFooter,
   customDaysClassName,
+  disableMonthSelect,
+  disableYearSelect,
 }) => {
   const calendarElement = useRef(null);
   const [mainState, setMainState] = useState({
@@ -130,6 +132,8 @@ const Calendar = ({
         isMonthSelectorOpen={mainState.isMonthSelectorOpen}
         isYearSelectorOpen={mainState.isYearSelectorOpen}
         locale={locale}
+        disableMonthSelect={disableMonthSelect}
+        disableYearSelect={disableYearSelect}
       />
 
       <MonthSelector

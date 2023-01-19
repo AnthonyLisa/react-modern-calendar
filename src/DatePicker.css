@@ -250,15 +250,19 @@
 .Calendar__monthYear > *.-activeBackground {
   background: #f5f5f5;
 }
-
-.Calendar__monthText:hover {
+.Calendar__monthText.-disabled {
+  cursor: default !important;
+}
+.Calendar__monthText.active:hover {
   transform: translateX(-0.2em) scale(0.95);
 }
 .Calendar.-rtl .Calendar__monthText:hover {
   transform: translateX(0.2em) scale(0.95);
 }
-
-.Calendar__yearText:hover {
+.Calendar__yearText.-disabled {
+  cursor: default !important;
+}
+.Calendar__yearText.active:hover {
   transform: translateX(0.2em) scale(0.95);
 }
 .Calendar.-rtl .Calendar__yearText:hover {

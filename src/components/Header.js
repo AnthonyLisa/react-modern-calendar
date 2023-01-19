@@ -15,6 +15,8 @@ const Header = ({
   isMonthSelectorOpen,
   isYearSelectorOpen,
   locale,
+  disableMonthSelect,
+  disableYearSelect,
 }) => {
   const headerElement = useRef(null);
   const monthYearWrapperElement = useRef(null);
@@ -111,6 +113,19 @@ const Header = ({
     onMonthChange(direction);
   };
 
+  const handleMonthButton = () => {
+    if (disableMonthSelect) {
+      return;
+    }
+    onMonthSelect();
+  };
+  const handleYearSelect = () => {
+    if (disableYearSelect) {
+      return;
+    }
+    onYearSelect();
+  };
+
   // first button text is the one who shows the current month and year(initial active child)
   const monthYearButtons = [true, false].map(isInitialActiveChild => {
     const { month, year } = getMonthYearText(isInitialActiveChild);
@@ -127,9 +142,9 @@ const Header = ({
         {...hiddenStatus}
       >
         <button
-          onClick={onMonthSelect}
+          onClick={handleMonthButton}
           type="button"
-          className="Calendar__monthText"
+          className={`Calendar__monthText  ${!disableMonthSelect ? 'active' : '-disabled'}`}
           aria-label={isMonthSelectorOpen ? closeMonthSelector : openMonthSelector}
           tabIndex={isActiveMonth ? '0' : '-1'}
           {...hiddenStatus}
@@ -137,9 +152,9 @@ const Header = ({
           {month}
         </button>
         <button
-          onClick={onYearSelect}
+          onClick={handleYearSelect}
           type="button"
-          className="Calendar__yearText"
+          className={`Calendar__yearText ${!disableYearSelect ? 'active' : '-disabled'}`}
           aria-label={isYearSelectorOpen ? closeYearSelector : openYearSelector}
           tabIndex={isActiveMonth ? '0' : '-1'}
           {...hiddenStatus}
