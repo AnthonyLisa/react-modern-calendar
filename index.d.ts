@@ -36,8 +36,8 @@ export interface CalendarProps<TValue extends Value> {
   calendarRangeEndClassName?: string;
   renderFooter?: React.FC;
   customDaysClassName?: CustomDayClassNameItem[];
-  disableMonthSelect: boolean;
-  disableYearSelect: boolean;
+  disableMonthSelect?: boolean;
+  disableYearSelect?: boolean;
 }
 
 export function Calendar(props: Optional<CalendarProps<DayValue>, 'value'>): React.ReactElement;
