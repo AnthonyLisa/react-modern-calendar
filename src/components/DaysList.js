@@ -23,6 +23,7 @@ const DaysList = ({
   onChange,
   locale,
   calendarTodayClassName,
+  calendarDisabledClassName,
   calendarSelectedDayClassName,
   calendarRangeStartClassName,
   calendarRangeEndClassName,
@@ -139,7 +140,7 @@ const DaysList = ({
       .concat(isStartingDayRange ? ` -selectedStart ${calendarRangeStartClassName}` : '')
       .concat(isEndingDayRange ? ` -selectedEnd ${calendarRangeEndClassName}` : '')
       .concat(isWithinRange ? ` -selectedBetween ${calendarRangeBetweenClassName}` : '')
-      .concat(dayItem.isDisabled ? ' -disabled' : '');
+      .concat(dayItem.isDisabled ? ` -disabled ${calendarDisabledClassName}` : '');
     return classNames;
   };
 

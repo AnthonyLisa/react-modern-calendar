@@ -12,6 +12,7 @@ const Calendar = ({
   onDisabledDayError,
   calendarClassName,
   calendarTodayClassName,
+  calendarDisabledClassName,
   calendarSelectedDayClassName,
   calendarRangeStartClassName,
   calendarRangeBetweenClassName,
@@ -158,6 +159,7 @@ const Calendar = ({
         maximumDate={maximumDate}
         onChange={onChange}
         calendarTodayClassName={calendarTodayClassName}
+        calendarDisabledClassName={calendarDisabledClassName}
         calendarSelectedDayClassName={calendarSelectedDayClassName}
         calendarRangeStartClassName={calendarRangeStartClassName}
         calendarRangeEndClassName={calendarRangeEndClassName}

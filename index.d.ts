@@ -30,6 +30,7 @@ export interface CalendarProps<TValue extends Value> {
   slideAnimationDuration?: string;
   calendarClassName?: string;
   calendarTodayClassName?: string;
+  calendarDisabledClassName?: string;
   calendarSelectedDayClassName?: string;
   calendarRangeStartClassName?: string;
   calendarRangeBetweenClassName?: string;
