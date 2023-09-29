@@ -28,6 +28,7 @@ const DaysList = ({
   calendarRangeStartClassName,
   calendarRangeEndClassName,
   calendarRangeBetweenClassName,
+  calendarAvailableClassName,
   shouldHighlightWeekends,
   isQuickSelectorOpen,
   customDaysClassName,
@@ -140,7 +141,11 @@ const DaysList = ({
       .concat(isStartingDayRange ? ` -selectedStart ${calendarRangeStartClassName}` : '')
       .concat(isEndingDayRange ? ` -selectedEnd ${calendarRangeEndClassName}` : '')
       .concat(isWithinRange ? ` -selectedBetween ${calendarRangeBetweenClassName}` : '')
-      .concat(dayItem.isDisabled ? ` -disabled ${calendarDisabledClassName}` : '');
+      .concat(
+        dayItem.isDisabled
+          ? ` -disabled ${calendarDisabledClassName}`
+          : ` ${calendarAvailableClassName}`,
+      );
     return classNames;
   };
 

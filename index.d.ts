@@ -34,6 +34,7 @@ export interface CalendarProps<TValue extends Value> {
   calendarSelectedDayClassName?: string;
   calendarRangeStartClassName?: string;
   calendarRangeBetweenClassName?: string;
+  calendarAvailableClassName?: string;
   calendarRangeEndClassName?: string;
   renderFooter?: React.FC;
   customDaysClassName?: CustomDayClassNameItem[];

@@ -16,6 +16,7 @@ const Calendar = ({
   calendarSelectedDayClassName,
   calendarRangeStartClassName,
   calendarRangeBetweenClassName,
+  calendarAvailableClassName,
   calendarRangeEndClassName,
   disabledDays,
   colorPrimary,
@@ -164,6 +165,7 @@ const Calendar = ({
         calendarRangeStartClassName={calendarRangeStartClassName}
         calendarRangeEndClassName={calendarRangeEndClassName}
         calendarRangeBetweenClassName={calendarRangeBetweenClassName}
+        calendarAvailableClassName={calendarAvailableClassName}
         locale={locale}
         shouldHighlightWeekends={shouldHighlightWeekends}
         customDaysClassName={customDaysClassName}
