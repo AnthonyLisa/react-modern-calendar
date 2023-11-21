@@ -73,7 +73,6 @@
   --cl-color-error: #ff2929;
   font-size: 10px;
   background: #fff;
-  box-shadow: 0 1em 4em rgba(0, 0, 0, 0.07);
   border-radius: 1em;
   position: relative;
   user-select: none;
@@ -449,7 +448,7 @@
 
 .Calendar__sectionWrapper {
   position: relative;
-  min-height: 20.8em;
+  min-height: 21.8em;
   overflow: hidden;
 }
 
