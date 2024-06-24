@@ -422,6 +422,7 @@
 .Calendar__yearSelectorText:disabled {
   opacity: 0.5;
   cursor: default;
+  color: black;
 }
 
 .Calendar__monthSelectorItem.-active .Calendar__monthSelectorItemText,
