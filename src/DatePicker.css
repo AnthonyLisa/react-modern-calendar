@@ -226,6 +226,7 @@
 
 .Calendar__monthText {
   margin-left: -0.3em;
+  color: var(--cl-color-primary);
 }
 .Calendar__yearText:last-child {
   margin-right: -0.3em;
@@ -409,6 +410,7 @@
   font-size: 1.3em;
   min-width: 70%;
   transition: 0.3s;
+  color: var(--cl-color-primary);
 }
 
 .Calendar__monthSelectorItem:not(.-active) .Calendar__monthSelectorItemText:not(:disabled):hover,
