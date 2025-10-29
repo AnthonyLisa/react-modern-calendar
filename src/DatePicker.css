@@ -146,6 +146,7 @@
 
 .Calendar__monthArrow {
   border-radius: 50%;
+  color:var(--cl-color-primary);
   transition: var(--animation-duration) transform;
   pointer-events: none;
   background-repeat: no-repeat;

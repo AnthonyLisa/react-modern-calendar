@@ -10,10 +10,11 @@ const App = () => {
   return (
     <Calendar
       value={selectedDay}
-      minimumDate={{ year: 2023, month: 1, day: 1 }}
-      maximumDate={{ year: 2023, month: 2, day: 1 }}
+      // minimumDate={{ year: 2023, month: 1, day: 1 }}
+      // maximumDate={{ year: 2023, month: 2, day: 1 }}
       onChange={setValue}
       shouldHighlightWeekends
+      colorPrimary="red"
     />
   );
 };
