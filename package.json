@@ -1,6 +1,6 @@
 {
   "name": "intrivo-react-modern-calendar",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "A modern, beautiful, customizable date picker for React",
   "main": "lib/index.js",
   "types": "index.d.ts",
